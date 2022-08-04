@@ -1,0 +1,32 @@
+[
+  {
+    "language": "en",
+    "news": [
+      {
+        "date": "30th of July 2022",
+        "title": "Save defenders of Azovstal! Save Ukraine! Free Mariupol Defenders!",
+        "message": "On the 30th of July from 6pm until 8pm, we are holding a rally at Römerberg in Frankfurt to help free Mariupol defenders."
+      }
+    ]
+  },
+  {
+    "language": "de",
+    "news": [
+      {
+        "date": "30. Juli 2022",
+        "title": "Save defenders of Azovstal! Save Ukraine! Free Mariupol Defenders!",
+        "message": "Am 30. Juli findet am Römerberg in Frankfurt von 18 bis 20 Uhr unsere Kundgebung für die Befreiung der Mariupol-Verteidiger."
+      }
+    ]
+  },
+  {
+    "language": "ua",
+    "news": [
+      {
+        "date": "30 липня 2022",
+        "title": "Демонстрація за звільнення захисників Азовсталі",
+        "message": "30-го липня на площі Römerberg у місті Франкфурт з 18 до 20 години відбудеться демострація за звільнення захисників Маріуполя."
+      }
+    ]
+  }
+]
