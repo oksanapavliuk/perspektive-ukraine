@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-    h2 {
-        @apply text-2xl mt-12 text-blue  
-    }
+   html {
+       font-family: "Nunito", sans-serif;
+   }
 
-    h3 {
-        @apply text-xl mt-10
-    }
+   h2 {
+       @apply text-2xl mt-12 text-blue  
+   }
 
-    p {
-        @apply my-4
-    }
+   h3 {
+       @apply text-xl mt-10
+   }
+
+   p {
+       @apply my-4
+   }
 }
