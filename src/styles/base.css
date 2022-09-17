@@ -7,6 +7,10 @@
        font-family: "Nunito", sans-serif;
    }
 
+   h1 {
+       @apply text-4xl mt-12 text-blue  
+   }
+
    h2 {
        @apply text-2xl mt-12 text-blue  
    }
