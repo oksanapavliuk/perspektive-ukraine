@@ -1,8 +1,12 @@
+---
+import Hamburger from "./Hamburger.svelte";
+---
+
 <header>
   <div class="h-2.5 bg-blue"></div>
   <div class="h-2.5 bg-yellow"></div>
   <div class="bg-darkblue">
-    <nav class="relative container mx-auto px-4 py-2">
+    <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
         <a class="shrink-0" href="/perspektive-ukraine/">
           <img src="logo.svg" class="w-36" />
@@ -21,6 +25,7 @@
             <a href="/perspektive-ukraine/#mitarbeiten">Mitarbeiten</a>
           </li>
         </ul>
+        <Hamburger client:load />
       </div>
     </nav>
   </div>
