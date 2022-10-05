@@ -1,6 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import kornfeld from "../images/kornfeld.webp";
+
+import Event from "../components/Event.astro";
+
+const events = [
+  {
+    title: 'Azovstal - Save Mariupol Defenders',
+    date: '25.06.2022',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatem!  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatem!',
+    imgTitle: 'azovstal.jpeg',
+    link: 'https://adwooagency.pixieset.com/azovstal-savemariupoldefenders/'
+  },
+  {
+    title: 'Vatertag - UA - Alte Oper',
+    date: '26.05.2022',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatem!',
+    imgTitle: 'ua_vatertag.jpeg',
+    link: 'https://adwooagency.pixieset.com/vatertag-ua-alteoper/'
+  },
+  {
+    title: 'UA',
+    date: '08.05.2022',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatem!',
+    imgTitle: 'ua.jpeg',
+    link: 'https://adwooagency.pixieset.com/ua/'
+  }
+]
 ---
 
 <Layout title="Perspektive Ukraine e.V.">
@@ -41,7 +67,11 @@ import kornfeld from "../images/kornfeld.webp";
       <section>
         <h2 id="veranstaltungen">Veranstaltungen</h2>
         <hr class="mt-5" />
-        <p>...</p>
+        {events.map((event) => (
+          <>
+            <Event title={event.title} date={event.date} description={event.description} imgTitle={event.imgTitle} link={event.link} />
+          </>
+        ))}
       </section>
       <section>
         <h2 id="projekte">Projekte</h2>

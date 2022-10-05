@@ -1,0 +1,17 @@
+---
+const {title, date, description, imgTitle, link} = Astro.props;
+
+let fullLink = '/images/events/' + imgTitle;
+---
+
+<div class="flex flex-col my-5 justify-start md:flex-row" >
+    <div class="basis-1/2 my-5 md:my-0">
+        <h3 class="my-0">{title}</h3>
+        <p class="my-1">{date}</p>
+        <p>{description}</p>
+        <a class="py-1 px-3 bg-yellow" href={link} target="_blank">Zum Event</a>
+    </div>
+    <div class="basis-1/2">
+        <img src={fullLink} />
+    </div>
+</div>
