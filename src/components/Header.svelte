@@ -9,7 +9,7 @@
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
         <a class="shrink-0" href="/perspektive-ukraine/">
-          <img src="/logo.svg" class="w-36" alt="logo" />
+          <img src="logo.svg" class="w-36" alt="logo" />
         </a>
         <ul class="hidden md:flex space-x-6 list-none">
           <li class="text-blue hover:text-yellow">
