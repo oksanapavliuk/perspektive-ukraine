@@ -8,21 +8,21 @@
   <div class="bg-darkblue">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a class="shrink-0" href="/perspektive-ukraine/">
+        <a class="shrink-0" href="/">
           <img src="logo.svg" class="w-36" alt="logo" />
         </a>
         <ul class="hidden md:flex space-x-6 list-none">
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#veranstaltungen">Veranstaltungen</a>
+            <a href="/#veranstaltungen">Veranstaltungen</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#projekte">Projekte</a>
+            <a href="/#projekte">Projekte</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#spenden">Spenden</a>
+            <a href="/#spenden">Spenden</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#mitarbeiten">Mitarbeiten</a>
+            <a href="/#mitarbeiten">Mitarbeiten</a>
           </li>
         </ul>
         <button
@@ -41,16 +41,16 @@
       <div class="md:hidden" class:hidden={!isOpen}>
         <ul class="flex flex-col items-center space-y-6 py-8 list-none">
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#veranstaltungen">Veranstaltungen</a>
+            <a href="/#veranstaltungen">Veranstaltungen</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#projekte">Projekte</a>
+            <a href="/#projekte">Projekte</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#spenden">Spenden</a>
+            <a href="/#spenden">Spenden</a>
           </li>
           <li class="text-blue hover:text-yellow">
-            <a href="/perspektive-ukraine/#mitarbeiten">Mitarbeiten</a>
+            <a href="/#mitarbeiten">Mitarbeiten</a>
           </li>
         </ul>
       </div>

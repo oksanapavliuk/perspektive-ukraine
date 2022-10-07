@@ -5,8 +5,8 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://IljaAvadiev.github.io',
-  base: '/perspektive-ukraine',
+  site: 'https://test.perspektive-ukraine.de',
+  base: '/',
   integrations: [tailwind({
     config: {
       applyBaseStyles: false
