@@ -13,6 +13,9 @@
         </a>
         <ul class="hidden md:flex space-x-6 list-none">
           <li class="text-blue hover:text-yellow">
+            <a href="/#neuigkeiten">Neuigkeiten</a>
+          </li>
+          <li class="text-blue hover:text-yellow">
             <a href="/#veranstaltungen">Veranstaltungen</a>
           </li>
           <li class="text-blue hover:text-yellow">
@@ -40,6 +43,9 @@
       </div>
       <div class="md:hidden" class:hidden={!isOpen}>
         <ul class="flex flex-col items-center space-y-6 py-8 list-none">
+          <li class="text-blue hover:text-yellow">
+            <a href="/#neuigkeiten">Neuigkeiten</a>
+          </li>
           <li class="text-blue hover:text-yellow">
             <a href="/#veranstaltungen">Veranstaltungen</a>
           </li>
