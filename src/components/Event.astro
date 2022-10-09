@@ -1,7 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
 const {title, date, description, imgTitle, link} = Astro.props;
-
-let fullLink = '/images/events/' + imgTitle;
 ---
 
 <div class="flex flex-col gap-5 p-5 my-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row" >
@@ -13,6 +12,6 @@ let fullLink = '/images/events/' + imgTitle;
         <a class="py-1 px-3 bg-yellow" href={link} target="_blank">Zum Album</a>
     </div>
     <div class="basis-1/2">
-        <img src={fullLink} />
+        <Image src={import(`../images/events/${imgTitle}.jpeg`)} alt="Image of an event" format={"webp"} width={900} />
     </div>
 </div>
