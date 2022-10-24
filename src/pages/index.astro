@@ -8,6 +8,8 @@ import kornfeld from "../images/kornfeld.webp";
 import pasta from "../images/projects/pasta/food.jpeg";
 import flight from "../images/projects/transport_poland/flight_mission_at_destination.jpg";
 import transport from "../images/projects/children_berschad/car.jpg";
+import summercamp from "../images/projects/summercamp/children.jpg";
+import turbine from "../images/projects/powerplant/turbine.jpg";
 
 
 const events = [
@@ -16,7 +18,7 @@ const events = [
     date: '14.10.2022',
     description: 'Am 14.10. veranstalteten wir gemeinsam mit unseren Partnern eine Demonstration in Frankfurt: #DefendingUkraine. 87 Städte weltweit nahmen an der Bewegung teil. Unsere Partner waren folgende Vereine und politische Parteien: Ukrainischer Verein Frankfurt am Main e.V., Deutsch-Ukrainische Gesellschaft für Wirtschaft und Wissenschaft e.V., Initiative FrankfurtforUkraine, Europa Union Frankfurt e.V., Pulse of Europe e.V. sowie die Parteien Bündnis 90/Die Grünen Frankfurt, CDU Frankfurt, FDP Frankfurt, SPD Frankfurt, Volt Frankfurt. Unsere Forderungen waren: Support der ukrainischen Armee, Flüchtlingshilfe für Ukrainer*innen, Humanitäre Hilfe in die Ukraine, Sanktionen gegen Russland, Wiederaufbau der Ukraine während und nach dem Krieg, Aufnahme der Ukraine in die EU. Wir kämpfen jeden Tag für die Freiheit, Unabhängigkeit und Menschlichkeit in der Ukraine.',
     imgTitle: 'event6',
-    link: 'https://adwooagency.pixieset.com/uagoetheplatz/'
+    link: 'https://adwooagency.pixieset.com/rmerberguademo/'
   },
   {
     title: 'Russia is a terrorist state!',
@@ -158,16 +160,29 @@ const events = [
           </div>
         </div>
 
-        <h3>Kinder-Sommercamp</h3>
-        <p>
-          Für die Kinder muss das Leben weitergehen. Wir organisieren für sie
-          Sommercamps in friedlicher Umgebung mit Lernen, Spielen und Sport.
-        </p>
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-2/3">
+            <h3 class="my-0">Kinder-Sommercamp</h3>
+            <p>
+              Für die Kinder muss das Leben weitergehen. Wir organisieren für sie Sommercamps in friedlicher Umgebung mit Lernen, Spielen und Sport.
+            </p>
+          </div>
+          <div class="basis-1/3 max-h-80 overflow-hidden">
+            <Image src={summercamp} alt="pasta" format={"webp"}/>
+          </div>
+        </div>
 
-        <h3>Mini-Wasserkraftwerk</h3>
-        <p>
-          Nach offiziellen Schätzungen wird die ukrainische Wirtschaft durch den Krieg um 45% schrumpfen! Wir müssen die Wirtschaft stabilsieren. Wir können nicht warten, wir müssen damit jetzt beginnen. Wir wollen einen kleinen aber wichtigen Beitrag mit Projekten zur lokalen Energieversorgung leisten. Im Zentrum des Vorhabens steht der Bau von Mini- und Kleinstwasserkraftwerken.
-        </p>
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-1/3 max-h-80 overflow-hidden">
+            <Image src={turbine} alt="pasta" format={"webp"}/>
+          </div>
+          <div class="basis-2/3">
+            <h3 class="my-0">Mini-Wasserkraftwerk</h3>
+            <p>
+              Nach offiziellen Schätzungen wird die ukrainische Wirtschaft durch den Krieg um 45% schrumpfen! Wir müssen die Wirtschaft stabilsieren. Wir können nicht warten, wir müssen damit jetzt beginnen. Wir wollen einen kleinen aber wichtigen Beitrag mit Projekten zur lokalen Energieversorgung leisten. Im Zentrum des Vorhabens steht der Bau von Mini- und Kleinstwasserkraftwerken.
+            </p>
+          </div>
+        </div>
       </section>
       <section>
         <h2 id="spenden">Spenden</h2>
