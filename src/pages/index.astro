@@ -3,6 +3,7 @@ import { Image } from '@astrojs/image/components';
 import Layout from "../layouts/Layout.astro";
 import Event from "../components/Event.astro";
 import News from '../components/News.astro';
+import { Icon } from 'astro-icon'
 
 // import images
 import kornfeld from "../images/kornfeld.webp";
@@ -103,6 +104,11 @@ const events = [
           <h3 class="m-0 text-center">#NeueLebenRetten</h3>      
           <p class="text-center">Das Geburtshaus in Charkiw wurde von einer Bombardierung vollkommen zerstört. Die wertvollen Geräte und Ausstattung sind durch Explosion unbrauchbar geworden. Unser Ziel ist - das Geburtshaus, soweit es geht, mit der notwendigen Ausstattung zu versorgen.</p>
           <p class="text-center">Da diese Art von Hilfe sehr kostspielig ist, wird es nur mit euren Unterstützung möglich sein dem Geburtshaus zu helfen.</p>
+          <div class="flex justify-center items-center">
+            <a href="https://paypal.me/perspektiveukraine" target="_blank">
+              <Icon name="fa-brands:cc-paypal" width="55"/>
+            </a>
+          </div>
         </News>
       </section>
       <section>
@@ -191,6 +197,7 @@ const events = [
           <span>IBAN: DE76 8306 5408 0005 2429 83</span>
           <span>BIC: GENODEF1SLR</span>
         </div>
+        <p> Alternativ können Sie uns auch über <a class="underline" href="https://paypal.me/perspektiveukraine" target="_blank" >PayPal </a> unterstützen.</p>
         <p>
           Wir stellen gerne eine Spendenquittung aus. Schickt uns bitte hierfür
           eine E-Mail an <a
