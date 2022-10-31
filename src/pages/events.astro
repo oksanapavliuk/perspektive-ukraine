@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Event from "../components/Event.astro";
+
+const events = [
+  {
+    title: '#DefendingUkraine',
+    date: '14.10.2022',
+    description: 'Am 14.10. veranstalteten wir gemeinsam mit unseren Partnern eine Demonstration in Frankfurt: #DefendingUkraine. 87 Städte weltweit nahmen an der Bewegung teil. Unsere Partner waren folgende Vereine und politische Parteien: Ukrainischer Verein Frankfurt am Main e.V., Deutsch-Ukrainische Gesellschaft für Wirtschaft und Wissenschaft e.V., Initiative FrankfurtforUkraine, Europa Union Frankfurt e.V., Pulse of Europe e.V. sowie die Parteien Bündnis 90/Die Grünen Frankfurt, CDU Frankfurt, FDP Frankfurt, SPD Frankfurt, Volt Frankfurt. Unsere Forderungen waren: Support der ukrainischen Armee, Flüchtlingshilfe für Ukrainer*innen, Humanitäre Hilfe in die Ukraine, Sanktionen gegen Russland, Wiederaufbau der Ukraine während und nach dem Krieg, Aufnahme der Ukraine in die EU. Wir kämpfen jeden Tag für die Freiheit, Unabhängigkeit und Menschlichkeit in der Ukraine.',
+    imgTitle: 'event6',
+    link: 'https://adwooagency.pixieset.com/rmerberguademo/'
+  },
+  {
+    title: 'Russia is a terrorist state!',
+    date: '18.09.2022',
+    description: 'Schon mehr als ein halbes Jahr ist vergangen, seitdem Russland eine blutige Invasion der Ukraine gestartet hat. Sie verletzten damit das Völkerrecht, den Anstand und die Moral. Die Ukraine kämpft für die Freiheit, Unabhängigkeit, Meinungsfreiheit - alles Attribute die in Europa und Deutschland eine feste Stellung in der Gesellschaft haben. Deutschland und Europa unterstützt die Ukraine mit Sanktionen und Waffen. Und die Ukraine zeigt tapfer, dass sie die eingefallen Russen aus ihrem Land vertreiben kann. Erst recht gilt es jetzt, die Ukraine mit Waffen zu unterstützen und Russland weiterhin mit Sanktionen zu belegen. Damit Russland diesen Krieg verliert, damit die Ukraine frei in ihren eigenen Grenzen bleibt, damit Europa seine Werte nicht verrät. Gemeinsam gegen Russland - einem Sponsor des Terrors!',
+    imgTitle: 'event1',
+    link: 'https://adwooagency.pixieset.com/uagoetheplatz/'
+  },
+  {
+    title: '#independenceinmyheart Frankfurt - Mit der Unabhängigkeit im Herzen!',
+    date: '24.08.2022',
+    description: 'Freiheit beginnt mit jedem von uns! Tief in unserem Herzen! Und wir sind bereit, für unsere Freiheit zu sterben! Perspektive Ukraine e.V. organisierte einen Demonstrationszug zum Unabhängigkeitstag der Ukraine durch die Stadt Frankfurt. Denn wir alle wollen eine glückliche, freie Ukraine sehen. Gemeinsam, mit unserem ganzen Herzen!',
+    imgTitle: 'event2',
+    link: 'https://adwooagency.pixieset.com/ua-independenceday-ffm/'
+  },
+  {
+    title: 'Save defenders of Azovstal! Save Ukraine!',
+    date: '30.07.2022',
+    description: 'Schon zu lange währt der Krieg in der Ukraine! Die russische Invasion schadet den Menschen vor Ort mit jeder Rakete, mit jedem Geschoss, mit jeder Patrone. Die tapferen Ukrainer, die für Freiheit, Menschenrechte und Demokratie kämpfen, sterben oder in Gefangenschaft genommen werden (so wie die tapferen Kämpfer des Azovstal Werkes in Mariupol), müssen von uns stärker unterstützt werden.',
+    imgTitle: 'event3',
+    link: 'https://adwooagency.pixieset.com/uademo-rmerberg2007/'
+  },
+  {
+    title: 'Azovstal. Free Mariupol Defenders!',
+    date: '25.06.2022',
+    description: 'Perspektive Ukraine e.V. unterstützte in Frankfurt die europaweite Aktion „Azovstal - Free Mariupol Defenders“ Es war überall in den Nachrichten! Helden, die in Mariupol unter ständigem Beschuss Zivilisten verteidigt haben, in einem Stahlwerk - ohne Möglichkeit rauszukommen. Sie bekamen den Befehl, die Waffen niederzulegen, um sich in die Gefangenschaft zu begeben.Jetzt müssen die Verteidiger von Mariupol endlich befreit werden!',
+    imgTitle: 'event4',
+    link: 'https://adwooagency.pixieset.com/azovstal-savemariupoldefenders/'
+  },
+  {
+    title: 'Unterstützung der Väter in der Ukraine',
+    date: '26.05.2022',
+    description: 'Einer war Bäcker, der andere Professor, doch heute kämpfen sie um ihr Haus, um die Zukunft ihrer Kinder und um ihr Vaterland. Sie können leider nicht den Vatertag als Familienfest gemeinsam mit ihren Kindern feiern. Perspektive Ukraine e.V. hat alle Menschen aufgerufen, zusammen Solidarität mit diesen Vätern zu zeigen.',
+    imgTitle: 'event5',
+    link: 'https://adwooagency.pixieset.com/vatertag-ua-alteoper/',
+  },
+]
+---
+
+<Layout title="Veranstaltungen - Perspektive Ukraine e.V.">
+  <main>
+    <div class="container mx-auto">
+      <section>
+        <h1 id="veranstaltungen">Veranstaltungen</h1>
+        <hr class="mt-5" />
+        {events.map((event) => (
+          <>
+            <Event title={event.title} date={event.date} description={event.description} imgTitle={event.imgTitle} link={event.link} />
+          </>
+        ))}
+      </section>
+    </div>
+  </main>
+</Layout>

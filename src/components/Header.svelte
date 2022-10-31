@@ -1,4 +1,9 @@
 <script>
+  const links = [
+    { title: "Home", link: "/" },
+    { title: "Projekte", link: "/projects" },
+    { title: "Veranstaltungen", link: "/events" },
+  ];
   let isOpen = false;
 </script>
 
@@ -12,21 +17,11 @@
           <img src="/logo.svg" class="w-36" alt="logo" />
         </a>
         <ul class="hidden lg:flex space-x-6 list-none">
-          <li class="text-blue hover:text-yellow">
-            <a href="/#neuigkeiten">Neuigkeiten</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#veranstaltungen">Veranstaltungen</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#projekte">Projekte</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#spenden">Spenden</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#mitarbeiten">Mitarbeiten</a>
-          </li>
+          {#each links as link}
+            <li class="text-blue hover:text-yellow">
+              <a href={link.link}>{link.title}</a>
+            </li>
+          {/each}
         </ul>
         <!-- social links, feather icons -->
         <div class="hidden lg:flex text-blue space-x-2 justify-center">
@@ -115,21 +110,11 @@
       </div>
       <div class="lg:hidden" class:hidden={!isOpen}>
         <ul class="flex flex-col items-center space-y-6 py-8 list-none">
-          <li class="text-blue hover:text-yellow">
-            <a href="/#neuigkeiten">Neuigkeiten</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#veranstaltungen">Veranstaltungen</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#projekte">Projekte</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#spenden">Spenden</a>
-          </li>
-          <li class="text-blue hover:text-yellow">
-            <a href="/#mitarbeiten">Mitarbeiten</a>
-          </li>
+          {#each links as link}
+            <li class="text-blue hover:text-yellow">
+              <a href={link.link}>{link.title}</a>
+            </li>
+          {/each}
           <div class="flex text-blue space-x-2 justify-center">
             <a
               href="https://www.facebook.com/PerspektiveUkraine"

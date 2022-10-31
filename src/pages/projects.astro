@@ -1,0 +1,81 @@
+---
+import { Image } from '@astrojs/image/components';
+import Layout from "../layouts/Layout.astro";
+
+// import images
+import pasta from "../images/projects/pasta/food.jpeg";
+import flight from "../images/projects/transport_poland/flight_mission_at_destination.jpg";
+import transport from "../images/projects/children_berschad/car.jpg";
+import summercamp from "../images/projects/summercamp/children.jpg";
+import turbine from "../images/projects/powerplant/turbine.jpg";
+---
+
+<Layout title="Perspektive Ukraine e.V.">
+  <main>
+    <div class="container mx-auto">
+      <section>
+        <h1 id="projekte">Projekte</h1>
+        <hr class="mt-5" />
+
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-1/3">
+            <Image src={transport} alt="delivery car" format={"webp"} />
+          </div>
+          <div class="basis-2/3">
+            <h3 class="my-0">Humanitäre Hilfsgüter und Notfallmedizin</h3>
+            <p>
+              In den Kriegsgebieten mangelt es an Medikamenten, Essen und Trinkwasser, Kleidung und Hygieneprodukten. Verteidiger und Zivilsten sterben, weil die Versorgung mit Tourniquets, blutstillendem Verbandsmaterial, antibakteriellen Medikamenten usw. nicht hinterherkommt. Wir kaufen das, was am dringenstens benötigt wird und bringen es in die Kriegsgebiete. Wir organisieren den gesamten Transportweg und stellen sicher, dass alles am Ziel ankommt.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-2/3">
+            <h3 class="my-0">Transportflug nach Polen</h3>
+            <p>
+              Mitglied des Perspektive Ukraine e.V. Dr. Sascha Engelbrecht steuert eine Piper Cherokee Arrow nach Mielec nahe der polnisch-ukrainischen Grenze. Der Transportflug war Teil einer humanitären Mission, die von der <a class="underline" target="_blank" href="https://www.ukraine-air-rescue.de/mission-on-03-08-and-05-08-2022-with-five-aircraft-with-pilots-from-mainz-finthen-edfz-bonn-hangelar-edkb-frankfurt-egelsbach-edfe-bad-nauheim-edfb-and-lachen-speyerdorf-edlr">Ukraine Air Rescue</a> organisiert und durchgeführt wurde. 
+            </p>
+          </div>
+          <div class="basis-1/3">
+            <Image src={flight} alt="plane with pilot" format={"webp"}/>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-1/3 max-h-80 overflow-hidden">
+            <Image src={pasta} alt="pasta" format={"webp"}/>
+          </div>
+          <div class="basis-2/3">
+            <h3 class="my-0">Nudelpakete für die Suppenküchen in Charkiw, Ukraine</h3>
+            <p>
+                Unsere Aktion „Nudel für Charkiw“ hilft seit Mai 2022 Menschen, die durch die Bombenangriffe kein Zuhause mehr haben und bei Nahrungsmitteln auf Spenden angewiesen sind. Andrii Shorokhov hat eine kleine Nudelproduktion in Charkiw. Vom gespendeten Geld kaufen wir seine Nudeln und er verteilt sie kostenlos u.a. an Suppenküchen, Krankenhäuser und bedürftige Menschen, die unter widrigsten Bedingungen überleben müssen. Seit Mai 2022 hat Andrii mit Hilfe unserer privaten Spenderinnen und Spender und eine Großspende von der DekaBank, 3 Tonnen Nudeln verteilt. Die Dankbarkeit bei den Menschen vor Ort dafür ist groß. Für jeden gespendeten Euro kann eine Packung Nudeln zu jemandem gebracht werden, der sie dringend benötigt. Der Winter steht an, die Menschen in der Ukraine brauchen unsere Hilfe weiterhin. Jeder Betrag hilft! Um gezielt für dieses Projekt zu spenden, geben Sie bitte „Nudeln für Charkiw“ im Verwendungszweck an.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-2/3">
+            <h3 class="my-0">Kinder-Sommercamp</h3>
+            <p>
+              Für die Kinder muss das Leben weitergehen. Wir organisieren für sie Sommercamps in friedlicher Umgebung mit Lernen, Spielen und Sport.
+            </p>
+          </div>
+          <div class="basis-1/3 max-h-80 overflow-hidden">
+            <Image src={summercamp} alt="pasta" format={"webp"}/>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5 my-5 p-5 justify-start drop-shadow-xl bg-white shadow-black md:flex-row">
+          <div class="basis-1/3 max-h-80 overflow-hidden">
+            <Image src={turbine} alt="pasta" format={"webp"}/>
+          </div>
+          <div class="basis-2/3">
+            <h3 class="my-0">Mini-Wasserkraftwerk</h3>
+            <p>
+              Nach offiziellen Schätzungen wird die ukrainische Wirtschaft durch den Krieg um 45% schrumpfen! Wir müssen die Wirtschaft stabilsieren. Wir können nicht warten, wir müssen damit jetzt beginnen. Wir wollen einen kleinen aber wichtigen Beitrag mit Projekten zur lokalen Energieversorgung leisten. Im Zentrum des Vorhabens steht der Bau von Mini- und Kleinstwasserkraftwerken.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
