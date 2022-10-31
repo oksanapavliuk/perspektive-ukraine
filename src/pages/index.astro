@@ -1,5 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
 import Layout from "../layouts/Layout.astro";
 import News from '../components/News.astro';
 import { Icon } from 'astro-icon'
@@ -7,7 +6,7 @@ import { Icon } from 'astro-icon'
 
 <Layout title="Perspektive Ukraine e.V.">
   <main>
-   <div class="bg-[url('kornfeld.webp')] bg-slate-600 bg-no-repeat bg-cover bg-blend-multiply h-[80vh] flex items-center justify-center">
+   <div class="bg-[url('/kornfeld.webp')] bg-slate-600 bg-no-repeat bg-cover bg-blend-multiply h-[80vh] flex items-center justify-center">
     <div class="p-6 max-w-xl">
       <h1 class="uppercase text-3xl text-center md:text-6xl font-bold text-yellow m-0">Schaffen wir gemeinsam eine Perspektive für die Ukraine</h1>
       <div class="my-12 flex flex-col md:flex-row items-center justify-center  md:justify-between">
