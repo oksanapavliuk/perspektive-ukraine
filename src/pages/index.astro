@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import News from '../components/News.astro';
 import { Icon } from 'astro-icon'
+import { Image } from '@astrojs/image/components';
+
+import flyer from "../images/projects/charkiw_birthing_house/front.jpeg";
 ---
 
 <Layout title="Perspektive Ukraine e.V.">
@@ -54,6 +57,9 @@ import { Icon } from 'astro-icon'
         <hr class="mt-5" />
         <News>
           <h3 class="m-0 text-center">#NeueLebenRetten</h3>      
+          <div class="flex justify-center">
+            <Image src={flyer} alt="Charkiw Birthing House Flyer" format={"webp"} width={300} />
+          </div>
           <p class="text-center">Das Geburtshaus in Charkiw wurde von einer Bombardierung vollkommen zerstört. Die wertvollen Geräte und Ausstattung sind durch Explosion unbrauchbar geworden. Unser Ziel ist - das Geburtshaus, soweit es geht, mit der notwendigen Ausstattung zu versorgen.</p>
           <p class="text-center">Da diese Art von Hilfe sehr kostspielig ist, wird es nur mit euren Unterstützung möglich sein dem Geburtshaus zu helfen.</p>
           <div class="flex justify-center items-center">
