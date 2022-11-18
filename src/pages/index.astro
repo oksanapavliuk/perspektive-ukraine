@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon'
 import { Image } from '@astrojs/image/components';
 
 import flyer from "../images/projects/charkiw_birthing_house/front.jpeg";
+import concert from "../images/projects/charkiw_birthing_house/concert.jpeg";
 ---
 
 <Layout title="Perspektive Ukraine e.V.">
@@ -55,6 +56,37 @@ import flyer from "../images/projects/charkiw_birthing_house/front.jpeg";
       <section>
         <h2 id="neuigkeiten">Neuigkeiten</h2>
         <hr class="mt-5" />
+        <News>
+          <h3 class="mt-0 mb-4 text-center">Wohltätitgkeitskonzert</h3>      
+          <div class="flex justify-center">
+            <Image src={concert} alt="Wohltätigkeitskonzert" format={"webp"} width={300} />
+          </div>
+          <p>Liebe Freunde,</p>
+                      
+          <p>Wir geben ein Konzert für euch. Gespielt werden ukrainische klassische Musik und Ethno-Jazz.</p>
+          <p>
+            <address>
+              <span class="block underline">Wann und wo:</span>
+              <span class="block">Am 09.12 ab 18:30</span>
+              <span class="block">Dr. Hoch´s Konservatorium</span>
+              <span class="block">Sonnemannstr. 16</span>
+              <span class="block">60314 Frankfurt</span>
+            </address>
+          </p>                              
+          <p> 
+            Unsere Musiker für den Abend sind einzigartig:
+            <span class="block">Ein Akkordeonist (Kyiwer Jazz Musik Hochschule Absolvent)</span>
+            <span class="block">Eine Sängerin welche Bandura spielt (ukr. Harfe)</span>            
+            <span class="block">Eine  Ethno-Jazz Band aus Charkiw</span> 
+          </p>        
+          <p>
+            Alle Einnahmen und Spenden unterstützen den Wiederaufbau
+            eines zerbombten Geburtshauses in Charkiw,
+          </p>        
+         <p>
+            Wir freuen uns auf den gemeinsamen Abend mit euch…
+          </p>             
+        </News>
         <News>
           <h3 class="m-0 text-center">#NeueLebenRetten</h3>      
           <div class="flex justify-center">
