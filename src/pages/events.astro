@@ -46,6 +46,9 @@ const events = [
     link: 'https://adwooagency.pixieset.com/vatertag-ua-alteoper/',
   },
 ]
+
+import { Image } from '@astrojs/image/components';
+import concert from "../images/projects/charkiw_birthing_house/concert.jpeg";
 ---
 
 <Layout title="Veranstaltungen - Perspektive Ukraine e.V.">
@@ -53,6 +56,12 @@ const events = [
     <div class="container mx-auto">
       <section>
         <h1 id="veranstaltungen">Veranstaltungen</h1>
+        <h2>Anstehende Veranstaltungen</h2>
+        <hr class="my-5  " />
+        <div class="flex justify-center">
+          <Image src={concert} alt="Wohltätigkeitskonzert" format={"webp"} width={400} />
+        </div>
+        <h2>Vergangene Veranstaltungen</h2>
         <hr class="mt-5" />
         {events.map((event) => (
           <>
